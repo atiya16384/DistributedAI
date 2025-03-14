@@ -1,0 +1,9 @@
+<net>
+    <nodes>
+        <node id="A" x="0" y="0" type="priority"/>
+        <node id="B" x="500" y="0" type="priority"/>
+    </nodes>
+    <edges>
+        <edge id="road1" from="A" to="B" numLanes="1" speed="15"/>
+    </edges>
+</net>
