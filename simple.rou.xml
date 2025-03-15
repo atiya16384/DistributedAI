@@ -1,11 +1,22 @@
 <routes>
-    <vType id="car" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="15"/>
-    
+    <vType id="car" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="20" color="red"/>
+    <vType id="taxi" accel="0.7" decel="4.0" sigma="0.6" length="5" maxSpeed="22" color="yellow"/>
+    <vType id="bus" accel="0.5" decel="3.5" sigma="0.8" length="12" maxSpeed="12" color="blue"/>
+    <vType id="truck" accel="0.4" decel="3.0" sigma="0.5" length="15" maxSpeed="10" color="gray"/>
+
     <vehicle id="car1" type="car" depart="0">
-        <route edges="road1"/>
+        <route edges="road1 road2"/>
     </vehicle>
 
-    <vehicle id="car2" type="car" depart="3">
-        <route edges="road1"/>
+    <vehicle id="bus1" type="bus" depart="5">
+        <route edges="road2 road3"/>
+    </vehicle>
+
+    <vehicle id="truck1" type="truck" depart="10">
+        <route edges="road3 road4"/>
+    </vehicle>
+
+    <vehicle id="taxi1" type="taxi" depart="15">
+        <route edges="road4 road1"/>
     </vehicle>
 </routes>
