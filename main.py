@@ -1,17 +1,13 @@
 import traci
 
-# Define SUMO binary (GUI mode)
+# Start SUMO GUI
 sumo_binary = "sumo-gui"
-
-# Define the SUMO configuration file
 sumo_config = "3_3_simulation.sumocfg"
 
-# Start SUMO
 traci.start([sumo_binary, "-c", sumo_config])
 
-# Run simulation for 500 steps
-for step in range(500):
+# Run the simulation for 1000 steps
+for step in range(10000):
     traci.simulationStep()
 
-# Close SUMO
 traci.close()

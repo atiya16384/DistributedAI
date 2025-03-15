@@ -1,3 +1,4 @@
 <gui_settings>
-    <background color="0,102,0"/>
+    <background color="0,102,0"/>  <!-- Green Background -->
+    <color-scheme name="standard"/>
 </gui_settings>

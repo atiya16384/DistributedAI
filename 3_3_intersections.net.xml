@@ -31,7 +31,6 @@
 
 </configuration>
 -->
-
 <net version="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
 
     <location netOffset="510.00,510.00" convBoundary="-300.00,-900.00,900.00,300.00" origBoundary="-510.00,-510.00,510.00,510.00" projParameter="!"/>
@@ -615,57 +614,57 @@
     </edge>
 
     <tlLogic id="intersectionCenter" type="static" programID="0" offset="0">
-        <phase duration="100000" state="GGgsrrGGgsrr"/>
+        <phase duration="30" state="GGgsrrGGgsrr"/>
         <phase duration="3"  state="yyysrryyysrr"/>
-        <phase duration="100000" state="srrGGgsrrGGg"/>
+        <phase duration="30" state="srrGGgsrrGGg"/>
         <phase duration="3"  state="srryyysrryyy"/>
     </tlLogic>
     <tlLogic id="intersectionE" type="static" programID="0" offset="0">
-        <phase duration="100000" state="GGgsrrGGgsrr"/>
+        <phase duration="30" state="GGgsrrGGgsrr"/>
         <phase duration="3"  state="yyysrryyysrr"/>
-        <phase duration="100000" state="srrGGgsrrGGg"/>
+        <phase duration="30" state="srrGGgsrrGGg"/>
         <phase duration="3"  state="srryyysrryyy"/>
     </tlLogic>
     <tlLogic id="intersectionN" type="static" programID="0" offset="0">
-        <phase duration="100000" state="GGgsrrGGgsrr"/>
+        <phase duration="30" state="GGgsrrGGgsrr"/>
         <phase duration="3"  state="yyysrryyysrr"/>
-        <phase duration="100000" state="srrGGgsrrGGg"/>
+        <phase duration="30" state="srrGGgsrrGGg"/>
         <phase duration="3"  state="srryyysrryyy"/>
     </tlLogic>
     <tlLogic id="intersectionNE" type="static" programID="0" offset="0">
-        <phase duration="100000" state="GGgsrrGGgsrr"/>
+        <phase duration="30" state="GGgsrrGGgsrr"/>
         <phase duration="3"  state="yyysrryyysrr"/>
-        <phase duration="100000" state="srrGGgsrrGGg"/>
+        <phase duration="30" state="srrGGgsrrGGg"/>
         <phase duration="3"  state="srryyysrryyy"/>
     </tlLogic>
     <tlLogic id="intersectionNW" type="static" programID="0" offset="0">
-        <phase duration="100000" state="GGgsrrGGgsrr"/>
+        <phase duration="30" state="GGgsrrGGgsrr"/>
         <phase duration="3"  state="yyysrryyysrr"/>
-        <phase duration="100000" state="srrGGgsrrGGg"/>
+        <phase duration="30" state="srrGGgsrrGGg"/>
         <phase duration="3"  state="srryyysrryyy"/>
     </tlLogic>
     <tlLogic id="intersectionS" type="static" programID="0" offset="0">
-        <phase duration="100000" state="GGgsrrGGgsrr"/>
+        <phase duration="30" state="GGgsrrGGgsrr"/>
         <phase duration="3"  state="yyysrryyysrr"/>
-        <phase duration="100000" state="srrGGgsrrGGg"/>
+        <phase duration="30" state="srrGGgsrrGGg"/>
         <phase duration="3"  state="srryyysrryyy"/>
     </tlLogic>
     <tlLogic id="intersectionSE" type="static" programID="0" offset="0">
-        <phase duration="100000" state="GGgsrrGGgsrr"/>
+        <phase duration="30" state="GGgsrrGGgsrr"/>
         <phase duration="3"  state="yyysrryyysrr"/>
-        <phase duration="100000" state="srrGGgsrrGGg"/>
+        <phase duration="30" state="srrGGgsrrGGg"/>
         <phase duration="3"  state="srryyysrryyy"/>
     </tlLogic>
     <tlLogic id="intersectionSW" type="static" programID="0" offset="0">
-        <phase duration="100000" state="GGgsrrGGgsrr"/>
+        <phase duration="30" state="GGgsrrGGgsrr"/>
         <phase duration="3"  state="yyysrryyysrr"/>
-        <phase duration="100000" state="srrGGgsrrGGg"/>
+        <phase duration="30" state="srrGGgsrrGGg"/>
         <phase duration="3"  state="srryyysrryyy"/>
     </tlLogic>
     <tlLogic id="intersectionW" type="static" programID="0" offset="0">
-        <phase duration="100000" state="GGgsrrGGgsrr"/>
+        <phase duration="30" state="GGgsrrGGgsrr"/>
         <phase duration="3"  state="yyysrryyysrr"/>
-        <phase duration="100000" state="srrGGgsrrGGg"/>
+        <phase duration="30" state="srrGGgsrrGGg"/>
         <phase duration="3"  state="srryyysrryyy"/>
     </tlLogic>
 
