@@ -1,6 +1,0 @@
-<edges>
-    <edge id="road1" from="A" to="C" numLanes="3" speed="20"/>
-    <edge id="road2" from="C" to="B" numLanes="3" speed="20"/>
-    <edge id="road3" from="B" to="D" numLanes="3" speed="15"/>
-    <edge id="road4" from="D" to="A" numLanes="3" speed="15"/>
-</edges>

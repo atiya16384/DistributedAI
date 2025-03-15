@@ -1,0 +1,11 @@
+<configuration>
+    <gui-settings-file value="gui-settings.xml"/>
+    <input>
+        <net-file value="3_3_intersections.net.xml"/>
+        <route-files value="3_3_routes.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+</configuration>
