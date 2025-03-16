@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <routes>
-    <!-- Define vehicle types -->
-    <vType id="car" accel="1.0" decel="5.0" sigma="0.5" length="5" maxSpeed="20" color="red" lcStrategic="1"/>
-    <vType id="bus" accel="0.8" decel="4.0" sigma="0.5" length="12" maxSpeed="15" color="blue" lcStrategic="1"/>
-    <vType id="truck" accel="0.6" decel="3.5" sigma="0.5" length="10" maxSpeed="18" color="yellow" lcStrategic="1"/>
+    <vType id="car" accel="1.0" decel="5.0" sigma="0.5" length="5" maxSpeed="20" color="red" lcStrategic="1" />
+    <vType id="bus" accel="0.8" decel="4.0" sigma="0.5" length="12" maxSpeed="15" color="blue" lcStrategic="1" />
+    <vType id="truck" accel="0.6" decel="3.5" sigma="0.5" length="10" maxSpeed="18" color="yellow" lcStrategic="1" />
 
-    <!-- Define valid routes using actual network edges -->
-    <route id="route_1" edges="northMiddle___intersectionN intersectionN___intersectionCenter intersectionCenter___intersectionS"/>
-    <route id="route_2" edges="westMiddle___intersectionW intersectionW___intersectionCenter intersectionCenter___intersectionE"/>
-    <route id="route_3" edges="southMiddle___intersectionS intersectionS___intersectionCenter intersectionCenter___intersectionN"/>
+    <route id="route_1" edges="northMiddle___intersectionN intersectionN___intersectionCenter intersectionCenter___intersectionS southMiddle___intersectionS" />
+    <route id="route_2" edges="westMiddle___intersectionW intersectionW___intersectionCenter intersectionCenter___intersectionE eastMiddle___intersectionE" />
+    <route id="route_3" edges="southMiddle___intersectionS intersectionS___intersectionCenter intersectionCenter___intersectionN northMiddle___intersectionN" />
+    <route id="route_4" edges="eastMiddle___intersectionE intersectionE___intersectionCenter intersectionCenter___intersectionW westMiddle___intersectionW" />
+    <route id="route_5" edges="intersectionNW___intersectionN intersectionN___intersectionCenter intersectionCenter___intersectionS intersectionS___intersectionSE" />
+    <route id="route_6" edges="intersectionSW___intersectionW intersectionW___intersectionCenter intersectionCenter___intersectionE intersectionE___intersectionNE" />
+    <route id="route_7" edges="intersectionNE___intersectionN intersectionN___intersectionCenter intersectionCenter___intersectionS intersectionS___intersectionSW" />
+    <route id="route_8" edges="intersectionSE___intersectionE intersectionE___intersectionCenter intersectionCenter___intersectionW intersectionW___intersectionNW" />
+    <route id="route_9" edges="intersectionN___intersectionCenter intersectionCenter___intersectionS" />
+    <route id="route_10" edges="intersectionS___intersectionCenter intersectionCenter___intersectionN" />
+    <route id="route_11" edges="intersectionE___intersectionCenter intersectionCenter___intersectionW" />
+    <route id="route_12" edges="intersectionW___intersectionCenter intersectionCenter___intersectionE" />
+    <route id="route_13" edges="intersectionNW___intersectionN intersectionN___intersectionCenter intersectionCenter___intersectionS intersectionS___intersectionSE" />
+    <route id="route_14" edges="intersectionSW___intersectionS intersectionS___intersectionCenter intersectionCenter___intersectionN intersectionN___intersectionNE" />
+    <route id="route_15" edges="intersectionNE___intersectionE intersectionE___intersectionCenter intersectionCenter___intersectionW intersectionW___intersectionNW" />
+    <route id="route_16" edges="intersectionSE___intersectionS intersectionS___intersectionCenter intersectionCenter___intersectionN" />
+    <route id="route_17" edges="northRight___intersectionNE intersectionNE___intersectionE intersectionE___intersectionCenter intersectionCenter___intersectionS" />
+    <route id="route_18" edges="northLeft___intersectionNW intersectionNW___intersectionW intersectionW___intersectionCenter intersectionCenter___intersectionS" />
+    <route id="route_19" edges="southRight___intersectionSE intersectionSE___intersectionE intersectionE___intersectionCenter intersectionCenter___intersectionN" />
+    <route id="route_20" edges="southLeft___intersectionSW intersectionSW___intersectionW intersectionW___intersectionCenter intersectionCenter___intersectionN" />
 
-    <!-- Add continuous vehicle flows -->
-    <flow id="flow_1" type="car" route="route_1" begin="0" end="1000" vehsPerHour="1200"/>
-    <flow id="flow_2" type="bus" route="route_2" begin="0" end="1000" vehsPerHour="400"/>
-    <flow id="flow_3" type="truck" route="route_3" begin="0" end="1000" vehsPerHour="500"/>
+    <flow id="flow_1" type="car" route="route_1" begin="0" end="1000" vehsPerHour="1200" />
+    <flow id="flow_2" type="bus" route="route_2" begin="0" end="1000" vehsPerHour="400" />
+    <flow id="flow_3" type="truck" route="route_3" begin="0" end="1000" vehsPerHour="500" />
+    <flow id="flow_4" type="car" route="route_4" begin="0" end="1000" vehsPerHour="800" />
+    <flow id="flow_5" type="bus" route="route_5" begin="0" end="1000" vehsPerHour="300" />
+    <flow id="flow_6" type="truck" route="route_6" begin="0" end="1000" vehsPerHour="600" />
+    <flow id="flow_7" type="car" route="route_7" begin="0" end="1000" vehsPerHour="900" />
+    <flow id="flow_8" type="bus" route="route_8" begin="0" end="1000" vehsPerHour="250" />
+    <flow id="flow_9" type="truck" route="route_9" begin="0" end="1000" vehsPerHour="700" />
+    <flow id="flow_10" type="car" route="route_10" begin="0" end="1000" vehsPerHour="850" />
+    <flow id="flow_11" type="bus" route="route_11" begin="0" end="1000" vehsPerHour="350" />
+    <flow id="flow_12" type="truck" route="route_12" begin="0" end="1000" vehsPerHour="650" />
+    <flow id="flow_13" type="car" route="route_13" begin="0" end="1000" vehsPerHour="1100" />
+    <flow id="flow_14" type="bus" route="route_14" begin="0" end="1000" vehsPerHour="450" />
+    <flow id="flow_15" type="truck" route="route_15" begin="0" end="1000" vehsPerHour="550" />
+    <flow id="flow_16" type="car" route="route_16" begin="0" end="1000" vehsPerHour="950" />
+    <flow id="flow_17" type="bus" route="route_17" begin="0" end="1000" vehsPerHour="300" />
+    <flow id="flow_18" type="truck" route="route_18" begin="0" end="1000" vehsPerHour="500" />
+    <flow id="flow_19" type="car" route="route_19" begin="0" end="1000" vehsPerHour="1250" />
+    <flow id="flow_20" type="bus" route="route_20" begin="0" end="1000" vehsPerHour="400" />
 </routes>
