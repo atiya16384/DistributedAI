@@ -1,0 +1,20 @@
+Warning: Environment variable SUMO_HOME is not set properly, disabling XML validation. Set 'auto' or 'always' for web lookups.
+***Starting server on port 55016 ***
+Loading net-file from 'pasubio/pasubio_buslanes.net.xml' ... done (23ms).
+Loading additional-files from 'pasubio/pasubio_vtypes.add.xml' ... done (1ms).
+Loading additional-files from 'pasubio/pasubio_bus_stops.add.xml' ... done (1ms).
+Loading additional-files from 'pasubio/pasubio_busses.rou.xml' ... done (7ms).
+Loading additional-files from 'pasubio/pasubio_detectors.add.xml' ... done (0ms).
+Loading additional-files from 'pasubio/pasubio_tls.add.xml' ... done (1ms).
+Loading route-files incrementally from 'pasubio/pasubio.rou.xml'
+Loading done.
+Simulation ended at time: 0.00.
+Performance:
+ Duration: 2.15s
+ TraCI-Duration: 0.00s
+ Real time factor: 0
+ UPS: 0.000000
+Vehicles:
+ Inserted: 0 (Loaded: 121)
+ Running: 0
+ Waiting: 0

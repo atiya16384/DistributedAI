@@ -1,7 +1,7 @@
 import traci
 
 sumo_binary = "sumo-gui"  # or "sumo" for non-GUI mode
-sumo_config = "4x4.sumocfg"
+sumo_config = "pasubio/run.sumocfg"
 
 traci.start([sumo_binary, "-c", sumo_config])
 
