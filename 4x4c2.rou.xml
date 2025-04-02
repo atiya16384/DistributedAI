@@ -1,13 +1,23 @@
 <routes>
+    <!-- Define Vehicle Types with Improved Appearance -->
+    <vType id="car" accel="1.0" decel="3.0" sigma="0.5" length="4.5" width="1.8" maxSpeed="20"
+        minGap="2.5" shape="rectangle" guiShape="passenger/sedan" color="1,1,1" />
+        
+    <vType id="bus" accel="0.8" decel="3.0" sigma="0.5" length="12" width="2.5" maxSpeed="15"
+        minGap="3.5" shape="bus" guiShape="bus" color="0,0,1" />
 
-    <flow id="0" from="16to0" to="12to24" begin="0" end="20000" period="6" departSpeed="max" departPos="base" departLane="best"/>
-    <flow id="1" from="17to1" to="13to25" begin="0" end="20000" period="6" departSpeed="max" departPos="base" departLane="best"/>
-    <flow id="2" from="18to2" to="14to26" begin="0" end="20000" period="6" departSpeed="max" departPos="base" departLane="best"/>
-    <flow id="3" from="19to3" to="15to27" begin="0" end="20000" period="6" departSpeed="max" departPos="base" departLane="best"/>
+    <vType id="truck" accel="0.6" decel="2.5" sigma="0.5" length="10" width="2.5" maxSpeed="18"
+        minGap="3.0" shape="truck" guiShape="truck" color="1,1,0" />
 
-    <flow id="4" from="20to0" to="3to28" begin="0" end="20000" period="2" departSpeed="max" departPos="base" departLane="best"/>
-    <flow id="5" from="21to4" to="7to29" begin="0" end="20000" period="2" departSpeed="max" departPos="base" departLane="best"/>
-    <flow id="6" from="22to8" to="11to30" begin="0" end="20000" period="2" departSpeed="max" departPos="base" departLane="best"/>
-    <flow id="7" from="23to12" to="15to31" begin="0" end="20000" period="2" departSpeed="max" departPos="base" departLane="best"/>
+
+    <flow id="0" type="car" from="16to0" to="12to24" begin="0" end="20000" period="6" departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="1" type = "car" from="17to1" to="13to25" begin="0" end="20000" period="6" departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="2" type="bus" from="18to2" to="14to26" begin="0" end="20000" period="6" departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="3" type="truck" from="19to3" to="15to27" begin="0" end="20000" period="6" departSpeed="max" departPos="base" departLane="best"/>
+
+    <flow id="4" type="car" from="20to0" to="3to28" begin="0" end="20000" period="2" departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="5" type="bus" from="21to4" to="7to29" begin="0" end="20000" period="2" departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="6" type="truck" from="22to8" to="11to30" begin="0" end="20000" period="2" departSpeed="max" departPos="base" departLane="best"/>
+    <flow id="7" type="car" from="23to12" to="15to31" begin="0" end="20000" period="2" departSpeed="max" departPos="base" departLane="best"/>
 
 </routes>

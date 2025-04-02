@@ -604,6 +604,7 @@
     <junction id="27" type="dead_end" x="600.00" y="0.00" incLanes="15to27_0 15to27_1" intLanes="" shape="593.45,0.00 599.95,0.00"/>
     <junction id="28" type="dead_end" x="750.00" y="600.00" incLanes="3to28_0 3to28_1" intLanes="" shape="750.00,593.45 750.00,599.95"/>
     <junction id="29" type="dead_end" x="750.00" y="450.00" incLanes="7to29_0 7to29_1" intLanes="" shape="750.00,443.45 750.00,449.95"/>
+    
     <junction id="3" type="traffic_light" x="600.00" y="600.00" incLanes="19to3_0 19to3_1 2to3_0 2to3_1" intLanes=":3_0_0 :3_0_1 :3_2_0 :3_3_0 :3_4_0 :3_4_1" shape="593.45,601.45 599.95,601.45 601.45,599.95 601.45,593.45 599.95,591.95 593.45,591.95 591.95,593.45 591.95,599.95">
         <request index="0" response="111000" foes="111000" cont="0"/>
         <request index="1" response="111000" foes="111000" cont="0"/>
