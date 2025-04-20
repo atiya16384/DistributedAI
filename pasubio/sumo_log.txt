@@ -1,25 +1,23 @@
 Warning: Environment variable SUMO_HOME is not set properly, disabling XML validation. Set 'auto' or 'always' for web lookups.
-***Starting server on port 56753 ***
-Loading net-file from 'pasubio/pasubio_buslanes.net.xml' ... done (28ms).
+***Starting server on port 63877 ***
+Loading net-file from 'pasubio/pasubio_buslanes.net.xml' ... done (23ms).
 Loading additional-files from 'pasubio/pasubio_vtypes.add.xml' ... done (2ms).
-Loading additional-files from 'pasubio/pasubio_bus_stops.add.xml' ... done (1ms).
-Loading additional-files from 'pasubio/pasubio_busses.rou.xml' ... done (6ms).
+Loading additional-files from 'pasubio/pasubio_bus_stops.add.xml' ... done (2ms).
+Loading additional-files from 'pasubio/pasubio_busses.rou.xml' ... done (10ms).
 Loading additional-files from 'pasubio/pasubio_detectors.add.xml' ... done (2ms).
 Loading additional-files from 'pasubio/pasubio_tls.add.xml' ... done (1ms).
 Loading route-files incrementally from 'pasubio/pasubio.rou.xml'
 Loading done.
 Simulation started with time: 0.00.
-Warning: Teleporting vehicle 'Gandhi_40_2073'; waited too long (yield), lane='1[1]_2', time=3683.00.
-Warning: Vehicle 'Gandhi_40_2073' ends teleporting on edge '38[0]', time=3715.00.
-Simulation ended at time: 10000.00.
-Reason: TraCI requested termination.
+Error: tcpip::Socket::recvAndCheck @ recv: peer shutdown
+Quitting (on error).
+Simulation ended at time: 1.00.
 Performance:
- Duration: 30.63s
- TraCI-Duration: 0.47s
- Real time factor: 326.52
- UPS: 93613.563639
+ Duration: 14.55s
+ TraCI-Duration: 0.00s
+ Real time factor: 0.068738
+ UPS: 0.893594
 Vehicles:
- Inserted: 8776
- Running: 0
- Waiting: 0
- Teleports: 1 (Yield: 1)
+ Inserted: 13 (Loaded: 121)
+ Running: 13
+ Waiting: 1
