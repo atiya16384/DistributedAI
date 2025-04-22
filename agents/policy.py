@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 class PolicyNetwork(nn.Module):
-    def __init__(self, input_dim=19, hidden_dim=128, output_dim=1):
+    def __init__(self, input_dim=17, hidden_dim=128, output_dim=1):
         super(PolicyNetwork, self).__init__()
         self.actor = nn.Sequential(
             nn.Linear(input_dim, hidden_dim),

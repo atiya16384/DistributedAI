@@ -1,0 +1,16 @@
+***Starting server on port 59250 ***
+Loading net-file from 'simulation/simulation.net.xml' ... done (32ms).
+Loading additional-files from 'simulation/vtypes.add.xml' ... done (2ms).
+Loading additional-files from 'simulation/simulation_detectors.add.xml' ... done (2ms).
+Loading route-files incrementally from 'simulation/simulation_mixed.rou.xml'
+Loading done.
+Simulation ended at time: 0.00.
+Performance:
+ Duration: 654.34s
+ TraCI-Duration: 0.00s
+ Real time factor: 0
+ UPS: 0.000000
+Vehicles:
+ Inserted: 0 (Loaded: 2)
+ Running: 0
+ Waiting: 0

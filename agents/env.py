@@ -16,7 +16,7 @@ class PasubioEnv:
         self.embedding_memory = {}  # Contrastive representation history
         self.embedding_window = 10  # You can increase/decrease as needed
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.policy = PolicyNetwork(input_dim=22).to(self.device) # Adjust to match your obs shape   
+        self.policy = PolicyNetwork(input_dim=17).to(self.device) # Adjust to match your obs shape   
         self.destinations = {}  # veh_id -> target edge
 
     def reset(self):
@@ -24,8 +24,17 @@ class PasubioEnv:
             traci.close()
         traci.start([self.sumo_binary, "-c", self.sumo_config])
         self.step_count = 0
-        traci.simulationStep()
-        self.vehicles = set(traci.vehicle.getIDList())
+
+        # Wait until vehicles spawn
+        for _ in range(500):  # max 500 steps
+            traci.simulationStep()
+            self.vehicles = set(traci.vehicle.getIDList())
+            if self.vehicles:
+                break
+
+        if not self.vehicles:
+            print("[WARNING] No vehicles found in simulation after 500 steps!")
+
         self.destinations.clear()
         for veh_id in self.vehicles:
             route = traci.vehicle.getRoute(veh_id) 
@@ -146,7 +155,7 @@ class PasubioEnv:
     def _get_rewards(self):
         rewards = {}
         for veh_id in self.vehicles:
-            if not traci.vehicle.exists(veh_id):
+            if veh_id not in traci.vehicle.getIDList():
                 continue
 
             speed = traci.vehicle.getSpeed(veh_id)

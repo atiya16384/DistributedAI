@@ -2,9 +2,9 @@
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
     <input>
-        <net-file value="pasubio_buslanes.net.xml"/>
-        <route-files value="pasubio.rou.xml"/>
-        <additional-files value="pasubio_vtypes.add.xml,pasubio_bus_stops.add.xml,pasubio_busses.rou.xml,pasubio_detectors.add.xml,pasubio_tls.add.xml"/>
+        <net-file value="simulation.net.xml"/>
+        <route-files value="simulation_mixed.rou.xml"/>
+        <additional-files value="vtypes.add.xml, simulation_detectors.add.xml"/>
     </input>
     
     <output>

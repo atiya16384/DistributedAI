@@ -13,7 +13,7 @@ STEPS = 1000
 LR = 0.001
 
 # --- Environment and Policy Setup ---
-env = PasubioEnv(config_file="pasubio/run.sumocfg", max_steps=STEPS, gui=True)
+env = PasubioEnv(config_file="simulation/run.sumocfg", max_steps=STEPS, gui=True)
 policy = env.policy  # already initialized in env.py
 optimizer = optim.Adam(policy.parameters(), lr=LR)
 mse_loss = nn.MSELoss()
@@ -35,7 +35,7 @@ for episode in range(EPISODES):
 
     for t in range(STEPS):
         veh_ids = list(obs_dict.keys())
-        obs_tensor = torch.tensor([obs_dict[vid] for vid in veh_ids], dtype=torch.float32)
+        obs_tensor = torch.from_numpy(np.array([obs_dict[vid] for vid in veh_ids], dtype=np.float32))
 
         # Policy forward pass
         actions, values = policy(obs_tensor)

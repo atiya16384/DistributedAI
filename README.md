@@ -74,7 +74,7 @@
 - **What**: Trains the RL agent and logs data for analysis.
 - **How**:
   - Training uses REINFORCE + Value Baseline (`train.py`)
-  - Evaluation logs to `outputs/train.csv`
+  - Evaluation logs to `outputs/train.csv`git 
   - `evaluate.py` plots:
     - Average Travel Time
     - Total Reward
